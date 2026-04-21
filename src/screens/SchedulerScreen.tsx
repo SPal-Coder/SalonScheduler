@@ -179,8 +179,8 @@ export default function SchedulerScreen() {
           <Text style={styles.btnText}>Add Slot</Text>
         </TouchableOpacity>
       )}
-
-      <ScrollView >
+      <ScrollView horizontal showsHorizontalScrollIndicator>
+      <ScrollView showsVerticalScrollIndicator={false} >
         <View>
 
           {/* HEADER */}
@@ -257,6 +257,7 @@ export default function SchedulerScreen() {
           </View>
 
         </View>
+      </ScrollView>
       </ScrollView>
     </SafeAreaView>
   );
